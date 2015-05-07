@@ -1,0 +1,395 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>context | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../core\registry.html" />
+    
+    
+    <link rel="prev" href="../core\index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Tue Mar 31 2015 12:17:14 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="core\index.html">
+            
+                
+                    <a href="../core\index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Loopback核心
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1" data-path="core\context.html">
+            
+                
+                    <a href="../core\context.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        context
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="core\registry.html">
+            
+                
+                    <a href="../core\registry.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        registry
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="model\index.html">
+            
+                
+                    <a href="../model\index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        模型定义
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="model\validation.html">
+            
+                
+                    <a href="../model\validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        模型验证
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="model\remotemethod.html">
+            
+                
+                    <a href="../model\remotemethod.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        远程方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="model\nativedbaccess.html">
+            
+                
+                    <a href="../model\nativedbaccess.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        原生数据库操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="model\geo.html">
+            
+                
+                    <a href="../model\geo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        GEO数据查询
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">Published with GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Share on Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Share on Google</button>
+                <button type="button" data-sharing="facebook" class="button">Share on Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Share on Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Share on Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p><code>server/middleware/context.js</code></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = loopback();
+app.use(loopback.context(options);
+app.use(loopback.rest());
+app.listen();
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = context;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">context</span><span class="hljs-params">(options)</span> </span>{
+  options = options || {};
+  <span class="hljs-keyword">var</span> scope = options.name || name;
+  <span class="hljs-keyword">var</span> enableHttpContext = options.enableHttpContext || <span class="hljs-literal">false</span>;
+  <span class="hljs-comment">// createContext&#x65B9;&#x6CD5;&#x5C06;context&#x5B9E;&#x4F8B;&#x5B58;&#x50A8;&#x5230;nodejs&#x7684;process&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4E2D;</span>
+  <span class="hljs-comment">// &#x5177;&#x4F53;&#x7684;createContext&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x4E0B;&#x9762;&#x5217;&#x51FA;</span>
+  <span class="hljs-keyword">var</span> ns = createContext(scope);
+
+  <span class="hljs-comment">// &#x53EF;&#x4EE5;&#x770B;&#x51FA;context&#x6700;&#x7EC8;&#x5C31;&#x662F;&#x5C06;&#x4E00;&#x4E2A;contextHandler&#x4E2D;&#x95F4;&#x4EF6;&#x653E;&#x5165;&#x5230;app&#x7684;&#x8C03;&#x7528;&#x94FE;&#x7684;&#x9876;&#x7AEF;</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">contextHandler</span><span class="hljs-params">(req, res, next)</span> </span>{
+    <span class="hljs-comment">// &#x5224;&#x65AD;&#x5F53;&#x524D;req&#x5BF9;&#x8C61;&#x4E2D;&#x662F;&#x5426;&#x5DF2;&#x6709;context&#xFF0C;&#x5982;&#x679C;&#x6709;&#x5219;&#x8DF3;&#x8FC7;</span>
+    <span class="hljs-keyword">if</span> (req.loopbackContext) {
+      <span class="hljs-keyword">return</span> next();
+    }
+    req.loopbackContext = ns;
+    <span class="hljs-comment">// Bind req/res event emitters to the given namespace</span>
+    ns.bindEmitter(req);
+    ns.bindEmitter(res);
+
+    <span class="hljs-keyword">var</span> currentDomain = domain.create();
+    currentDomain.oldBind = currentDomain.bind;
+    currentDomain.bind = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(callback, context)</span> </span>{
+      <span class="hljs-keyword">return</span> currentDomain.oldBind(ns.bind(callback, context), context);
+    };
+
+    currentDomain.add(req);
+    currentDomain.add(res);
+
+    <span class="hljs-comment">// Create namespace for the request context</span>
+    currentDomain.run(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+      ns.run(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">processRequestInContext</span><span class="hljs-params">(context)</span> </span>{
+        <span class="hljs-comment">// Run the code in the context of the namespace</span>
+        <span class="hljs-keyword">if</span> (enableHttpContext) {
+          ns.set(<span class="hljs-string">&apos;http&apos;</span>, {req: req, res: res}); <span class="hljs-comment">// Set up the transport context</span>
+        }
+        next();
+      });
+    });
+  };
+}
+</code></pre>
+<p><code>createContext</code>&#x65B9;&#x6CD5;&#x5728;<code>process.context</code>&#x4E2D;&#x5B58;&#x50A8;&#x5BF9;&#x5E94;&#x7684;context&#x5185;&#x5BB9;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createContext</span><span class="hljs-params">(scope)</span> </span>{
+  <span class="hljs-comment">// Make the namespace globally visible via the process.context property</span>
+  process.context = process.context || {};
+  <span class="hljs-keyword">var</span> ns = process.context[scope];
+  <span class="hljs-keyword">if</span> (!ns) {
+    ns = cls.createNamespace(scope);
+    process.context[scope] = ns;
+    <span class="hljs-comment">// Set up loopback.getCurrentContext()</span>
+    loopback.getCurrentContext = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">return</span> ns &amp;&amp; ns.active ? ns : <span class="hljs-literal">null</span>;
+    };
+
+    chain(juggler);
+    chain(remoting);
+  }
+  <span class="hljs-keyword">return</span> ns;
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../core\index.html" class="navigation navigation-prev " aria-label="Previous page: Loopback核心"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../core\registry.html" class="navigation navigation-next " aria-label="Next page: registry"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

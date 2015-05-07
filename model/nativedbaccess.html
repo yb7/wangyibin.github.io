@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>原生数据库操作 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../model\geo.html" />
+    
+    
+    <link rel="prev" href="../model\remotemethod.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="2.3" data-basepath=".." data-revision="Tue Mar 31 2015 12:17:14 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="core\index.html">
+            
+                
+                    <a href="../core\index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Loopback核心
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="core\context.html">
+            
+                
+                    <a href="../core\context.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        context
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="core\registry.html">
+            
+                
+                    <a href="../core\registry.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        registry
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="model\index.html">
+            
+                
+                    <a href="../model\index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        模型定义
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="model\validation.html">
+            
+                
+                    <a href="../model\validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        模型验证
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="model\remotemethod.html">
+            
+                
+                    <a href="../model\remotemethod.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        远程方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="model\nativedbaccess.html">
+            
+                
+                    <a href="../model\nativedbaccess.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        原生数据库操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="model\geo.html">
+            
+                
+                    <a href="../model\geo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        GEO数据查询
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">Published with GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Share on Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Share on Google</button>
+                <button type="button" data-sharing="facebook" class="button">Share on Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Share on Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Share on Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>&#x901A;&#x8FC7;&#x8BBF;&#x95EE;&#x539F;&#x751F;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x7684;&#x8BBF;&#x95EE;&#x4E0E;&#x64CD;&#x4F5C;</p>
+<p>Loopback&#x7684;Model.find&#x65B9;&#x6CD5;&#x5982;&#x4F55;&#x628A;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x8F6C;&#x5316;&#x4E3A;mongodb&#x7684;&#x67E5;&#x8BE2;&#xFF1F;
+&#x770B;&#x6E90;&#x4EE3;&#x7801;<code>loopback-datasource-juggler/dao.js</code></p>
+<pre><code class="lang-js">DataAccessObject.find = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">find</span><span class="hljs-params">(query, options, cb)</span> </span>{
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-comment">// &#x8C03;&#x7528;connector&#x7684;all&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5B9E;&#x9645;&#x7684;&#x67E5;&#x8BE2;</span>
+  self.getDataSource().connector.all(self.modelName, query, allCb);
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p>&#x6458;&#x8981;<code>loopback-connector-mongodb\mongodb.js</code></p>
+<pre><code class="lang-js">MongoDB.prototype.all = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">all</span><span class="hljs-params">(model, filter, callback)</span> </span>{
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-keyword">var</span> query = {};
+  <span class="hljs-keyword">if</span> (filter.where) {
+    query = self.buildWhere(model, filter.where);
+  }
+  <span class="hljs-comment">// ...</span>
+}
+
+MongoDB.prototype.buildWhere = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(model, where)</span> </span>{
+  <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+  <span class="hljs-keyword">var</span> query = {};
+  <span class="hljs-comment">// &#x5982;&#x679C;&#x6CA1;&#x6709;where&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x5C31;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x7A7A;</span>
+  <span class="hljs-keyword">if</span> (where === <span class="hljs-literal">null</span> || (<span class="hljs-keyword">typeof</span> where !== <span class="hljs-string">&apos;object&apos;</span>)) {
+    <span class="hljs-keyword">return</span> query;
+  }
+  <span class="hljs-keyword">var</span> idName = self.idName(model);
+  <span class="hljs-built_in">Object</span>.keys(where).forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(k)</span> </span>{
+    <span class="hljs-keyword">var</span> cond = where[k];
+    <span class="hljs-keyword">if</span> (k === idName) {
+      k = <span class="hljs-string">&apos;_id&apos;</span>;
+      cond = ObjectID(cond);
+    }
+    <span class="hljs-keyword">if</span> (k === <span class="hljs-string">&apos;and&apos;</span> || k === <span class="hljs-string">&apos;or&apos;</span> || k === <span class="hljs-string">&apos;nor&apos;</span>) {
+      <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(cond)) {
+        cond = cond.map(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(c)</span> </span>{
+          <span class="hljs-keyword">return</span> self.buildWhere(model, c);
+        });
+      }
+      query[<span class="hljs-string">&apos;$&apos;</span> + k ] = cond;
+      <span class="hljs-keyword">delete</span> query[k];
+      <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">var</span> spec = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">var</span> options = <span class="hljs-literal">null</span>;
+
+    <span class="hljs-comment">//&#x5982;&#x679C;&#x67E5;&#x8BE2;&#x7684;key&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x63D0;&#x53D6;&#x5C06;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;key&#x4F5C;&#x4E3A;spec</span>
+    <span class="hljs-keyword">if</span> (cond &amp;&amp; cond.constructor.name === <span class="hljs-string">&apos;Object&apos;</span>) {
+      options = cond.options;
+      spec = <span class="hljs-built_in">Object</span>.keys(cond)[<span class="hljs-number">0</span>];
+      cond = cond[spec];
+    }
+    <span class="hljs-keyword">if</span> (spec) { <span class="hljs-comment">// &#x5BF9;&#x4E8E;&#x4F20;&#x591A;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x6309;&#x7167;key&#x7684;&#x7C7B;&#x578B;&#x7EC4;&#x88C5;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;</span>
+      <span class="hljs-keyword">if</span> (spec === <span class="hljs-string">&apos;between&apos;</span>) {
+        query[k] = { $gte: cond[<span class="hljs-number">0</span>], $lte: cond[<span class="hljs-number">1</span>]};
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (spec === <span class="hljs-string">&apos;inq&apos;</span>) {
+        query[k] = { $<span class="hljs-keyword">in</span>: cond.map(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(x)</span> </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;string&apos;</span> !== <span class="hljs-keyword">typeof</span> x) <span class="hljs-keyword">return</span> x;
+          <span class="hljs-keyword">return</span> ObjectID(x);
+        })};
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (spec === <span class="hljs-string">&apos;like&apos;</span>) {
+        query[k] = {$regex: <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(cond, options)};
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (spec === <span class="hljs-string">&apos;nlike&apos;</span>) {
+        query[k] = {$not: <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(cond, options)};
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (spec === <span class="hljs-string">&apos;neq&apos;</span>) {
+        query[k] = {$ne: cond};
+      }
+      <span class="hljs-keyword">else</span> {
+        query[k] = {};
+        query[k][<span class="hljs-string">&apos;$&apos;</span> + spec] = cond;
+      }
+    } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// &#x5BF9;&#x4E8E;&#x7B80;&#x5355;&#x7684;&#x5355;&#x503C;&#x67E5;&#x8BE2;&#xFF0C;&#x76F4;&#x63A5;&#x5C06;&#x952E;&#x503C;&#x5BF9;&#x62F7;&#x8D1D;&#x5230;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x4E2D;</span>
+      <span class="hljs-keyword">if</span> (cond === <span class="hljs-literal">null</span>) {
+        <span class="hljs-comment">// http://docs.mongodb.org/manual/reference/operator/query/type/</span>
+        <span class="hljs-comment">// Null: 10</span>
+        query[k] = {$type: <span class="hljs-number">10</span>};
+      } <span class="hljs-keyword">else</span> {
+        query[k] = cond;
+      }
+    }
+  });
+  <span class="hljs-keyword">return</span> query;
+}
+</code></pre>
+<p>Loopback&#x4EC5;&#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x6709;&#x9650;&#x7684;&#x901A;&#x7528;&#x67E5;&#x8BE2;&#x65B9;&#x6CD5;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x501F;&#x52A9;&#x539F;&#x751F;&#x7684;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x6765;&#x5B8C;&#x6210;&#x6570;&#x636E;&#x7684;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x5B9E;&#x73B0;&#x8BE5;&#x76EE;&#x7684;&#x6211;&#x4EEC;&#x6709;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x5199;&#x6CD5;</p>
+<h2 id="%E6%96%B9%E6%B3%95%E4%B8%80">&#x65B9;&#x6CD5;&#x4E00;</h2>
+<pre><code class="lang-js">Merchant.findMerchantsNeedUpdateIndex = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(cb)</span> </span>{
+  Merchant.find({where: {$where: <span class="hljs-string">&apos;this.searchableTextUpdateTime &gt; this.searchIndexUpdateTime&apos;</span>}}, cb);
+};
+</code></pre>
+<h2 id="%E6%96%B9%E6%B3%95%E4%BA%8C">&#x65B9;&#x6CD5;&#x4E8C;</h2>
+<pre><code class="lang-js">Merchant.findMerchantsNeedUpdateIndex = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(cb)</span> </span>{
+    <span class="hljs-comment">//&#x83B7;&#x53D6;Mongodb&#x7684;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;</span>
+    <span class="hljs-keyword">var</span> mongodbConnection = Merchant.dataSource.connector.db;
+    <span class="hljs-keyword">if</span> (!mongodbConnection) {
+      <span class="hljs-comment">// &#x6709;&#x53EF;&#x80FD;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;&#x8FD8;&#x672A;&#x5EFA;&#x7ACB;&#xFF0C;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x624B;&#x52A8;&#x53BB;&#x5EFA;&#x7ACB;&#x94FE;&#x63A5;</span>
+      <span class="hljs-comment">// &#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x662F;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;</span>
+      Merchant.dataSource.connect(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err, db)</span> </span>{
+        mongodbConnection = db;
+      });
+    }
+    <span class="hljs-comment">// &#x901A;&#x8FC7; mongodbConnection.collection(&apos;Merchant&apos;) &#x83B7;&#x53D6;Merchant&#x7684;&#x96C6;&#x5408;</span>
+    mongodbConnection.collection(<span class="hljs-string">&apos;Merchant&apos;</span>).find({$where: <span class="hljs-string">&apos;this.searchableTextUpdateTime &gt; this.searchIndexUpdateTime&apos;</span>}).
+      toArray(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err, data)</span> </span>{
+        <span class="hljs-keyword">if</span> (err) {
+          cb(err);
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">var</span> merchants = _.map(data, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(d)</span> </span>{
+              d.id = d._id;
+              <span class="hljs-keyword">delete</span> d._id;
+              <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Merchant(d);}
+          );
+          cb(<span class="hljs-literal">null</span>, merchants);
+        }
+      }
+    );
+  };
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../model\remotemethod.html" class="navigation navigation-prev " aria-label="Previous page: 远程方法"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../model\geo.html" class="navigation navigation-next " aria-label="Next page: GEO数据查询"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
