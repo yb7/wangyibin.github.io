@@ -1,0 +1,750 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>搭建ftp | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="prev" href="../linux/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="Fri May 08 2015 15:10:13 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="core/index.html">
+            
+                
+                    <a href="../core/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Loopback核心
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="core/context.html">
+            
+                
+                    <a href="../core/context.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        context
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="core/registry.html">
+            
+                
+                    <a href="../core/registry.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        registry
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="model/index.html">
+            
+                
+                    <a href="../model/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        模型定义
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="model/validation.html">
+            
+                
+                    <a href="../model/validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        模型验证
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="model/remotemethod.html">
+            
+                
+                    <a href="../model/remotemethod.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        远程方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="model/nativedbaccess.html">
+            
+                
+                    <a href="../model/nativedbaccess.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        原生数据库操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="model/geo.html">
+            
+                
+                    <a href="../model/geo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        GEO数据查询
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="json-schema/index.html">
+            
+                
+                    <a href="../json-schema/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        JSON Schema
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="json-schema/basics.html">
+            
+                
+                    <a href="../json-schema/basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        基本概念
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="json-schema/basics/type_keywords.html">
+            
+                
+                    <a href="../json-schema/basics/type_keywords.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        关键字`type`
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="json-schema/basics/generic_keywords.html">
+            
+                
+                    <a href="../json-schema/basics/generic_keywords.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        一般性关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="json-schema/basics/combining_schemas.html">
+            
+                
+                    <a href="../json-schema/basics/combining_schemas.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        模式组合
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="json-schema/basics/regular_expressions.html">
+            
+                
+                    <a href="../json-schema/basics/regular_expressions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        正则匹配
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="json-schema/complex_schema.html">
+            
+                
+                    <a href="../json-schema/complex_schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        构建复杂的Schema
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="json-schema/tv4_validator.html">
+            
+                
+                    <a href="../json-schema/tv4_validator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        使用tv4进行数据验证
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="linux/index.html">
+            
+                
+                    <a href="../linux/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Linux 相关
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1" data-path="linux/ftp.html">
+            
+                
+                    <a href="../linux/ftp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        搭建ftp
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8">&#x642D;&#x5EFA;FTP&#x670D;&#x52A1;&#x5668;</h2>
+<p>vsftp, &#x5373;Very Security File Transfer Protocol. &#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x662F;proftp(Profession ftp)&#x3002; &#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x4E5F;&#x662F;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x660E;&#x4E0B;vsftp&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
+<p>vsftp&#x63D0;&#x4F9B;3&#x79CD;&#x8FDC;&#x7A0B;&#x7684;&#x767B;&#x5F55;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>&#x533F;&#x540D;&#x767B;&#x5F55;&#x65B9;&#x5F0F;: &#x5C31;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5BC6;&#x7801;&#x3002;&#x5C31;&#x80FD;&#x767B;&#x5F55;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7535;&#x8111;&#x91CC;&#x9762;</li>
+<li>&#x672C;&#x5730;&#x7528;&#x6237;&#x65B9;&#x5F0F;: &#x9700;&#x8981;&#x5E10;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x624D;&#x80FD;&#x767B;&#x5F55;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x8FD9;&#x4E2A;&#x5E10;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x90FD;&#x662F;&#x5728;&#x4F60;linux&#x7CFB;&#x7EDF;&#x91CC;&#x9762;&#xFF0C;&#x5DF2;&#x7ECF;&#x6709;&#x7684;&#x7528;&#x6237;&#x3002;</li>
+<li>&#x865A;&#x62DF;&#x7528;&#x6237;&#x65B9;&#x5F0F;: &#x540C;&#x6837;&#x9700;&#x8981;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x624D;&#x80FD;&#x767B;&#x5F55;&#x3002;&#x4F46;&#x662F;&#x548C;&#x4E0A;&#x9762;&#x7684;&#x533A;&#x522B;&#x5C31;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x5728;&#x4F60;linux&#x7CFB;&#x7EDF;&#x4E2D;&#x662F;&#x6CA1;&#x6709;&#x7684;(&#x6CA1;&#x6709;&#x8BE5;&#x7528;&#x6237;&#x5E10;&#x53F7;)</li>
+</ol>
+<h3 id="%E5%AE%89%E8%A3%85%E4%B8%8E%E5%91%BD%E4%BB%A4">&#x5B89;&#x88C5;&#x4E0E;&#x547D;&#x4EE4;</h3>
+<pre><code class="lang-bash">yum install vsftpd
+</code></pre>
+<h4 id="%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4">&#x76F8;&#x5173;&#x547D;&#x4EE4;</h4>
+<p>&#x542F;&#x52A8;&#x4E0E;&#x5173;&#x95ED;</p>
+<pre><code class="lang-bash">[root@iZ23g22540kZ vsftpd]<span class="hljs-comment"># /bin/systemctl start vsftpd</span>
+
+[root@iZ23g22540kZ vsftpd]<span class="hljs-comment"># /bin/systemctl stop vsftpd</span>
+
+[root@iZ23g22540kZ vsftpd]<span class="hljs-comment"># /bin/systemctl restart vsftpd</span>
+
+[root@iZ23g22540kZ vsftpd]<span class="hljs-comment"># /bin/systemctl status vsftpd.service</span>
+vsftpd.service - Vsftpd ftp daemon
+   Loaded: loaded (/usr/lib/systemd/system/vsftpd.service; disabled)
+   Active: active (running) since Fri <span class="hljs-number">2015</span>-<span class="hljs-number">05</span>-<span class="hljs-number">08</span> <span class="hljs-number">14</span>:<span class="hljs-number">26</span>:<span class="hljs-number">21</span> CST; <span class="hljs-number">35</span>s ago
+  Process: <span class="hljs-number">15150</span> ExecStart=/usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf (code=exited, status=<span class="hljs-number">0</span>/SUCCESS)
+ Main PID: <span class="hljs-number">15151</span> (vsftpd)
+   CGroup: /system.slice/vsftpd.service
+           &#x2514;&#x2500;<span class="hljs-number">15151</span> /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf
+
+May <span class="hljs-number">08</span> <span class="hljs-number">14</span>:<span class="hljs-number">26</span>:<span class="hljs-number">21</span> iZ23g22540kZ systemd[<span class="hljs-number">1</span>]: Starting Vsftpd ftp daemon...
+May <span class="hljs-number">08</span> <span class="hljs-number">14</span>:<span class="hljs-number">26</span>:<span class="hljs-number">21</span> iZ23g22540kZ systemd[<span class="hljs-number">1</span>]: Started Vsftpd ftp daemon.
+May <span class="hljs-number">08</span> <span class="hljs-number">14</span>:<span class="hljs-number">26</span>:<span class="hljs-number">37</span> iZ23g22540kZ systemd[<span class="hljs-number">1</span>]: Started Vsftpd ftp daemon.
+</code></pre>
+<h4 id="%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4">&#x5176;&#x4ED6;&#x547D;&#x4EE4;</h4>
+<pre><code class="lang-bash">--&#x67E5;&#x770B;vsftpd &#x542F;&#x52A8;&#x72B6;&#x6001;
+[root@singledb ~]<span class="hljs-comment"># chkconfig --list vsftpd</span>
+vsftpd          <span class="hljs-number">0</span>:off   <span class="hljs-number">1</span>:off   <span class="hljs-number">2</span>:off   <span class="hljs-number">3</span>:off   <span class="hljs-number">4</span>:off   <span class="hljs-number">5</span>:off   <span class="hljs-number">6</span>:off
+
+[root@singledb ~]<span class="hljs-comment"># chkconfig  vsftpd on</span>
+
+[root@singledb ~]<span class="hljs-comment"># chkconfig --list vsftpd</span>
+vsftpd          <span class="hljs-number">0</span>:off   <span class="hljs-number">1</span>:off   <span class="hljs-number">2</span>:on    <span class="hljs-number">3</span>:on    <span class="hljs-number">4</span>:on    <span class="hljs-number">5</span>:on    <span class="hljs-number">6</span>:off
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x770B;&#x5230;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4ECE;2&#x5230;5&#x8BBE;&#x7F6E;&#x4E3A;on&#x4E86;&#x3002;2&#x5230;5&#x662F;&#x591A;&#x7528;&#x6237;&#x7EA7;&#x522B;&#x3002; &#x8FD9;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x662F;linux&#x4E0D;&#x540C;&#x7684;&#x8FD0;&#x884C;&#x7EA7;&#x522B;&#x3002;
+&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x52A0;level &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;&#xFF1A;</p>
+<pre><code class="lang-bash">--&#x67E5;&#x770B;vsftpd &#x542F;&#x52A8;&#x72B6;&#x6001;
+[root@singledb ~]<span class="hljs-comment"># chkconfig --level 0 vsftpd on</span>
+
+[root@singledb ~]<span class="hljs-comment"># chkconfig --list vsftpd</span>
+vsftpd          <span class="hljs-number">0</span>:on    <span class="hljs-number">1</span>:off   <span class="hljs-number">2</span>:on    <span class="hljs-number">3</span>:on    <span class="hljs-number">4</span>:on    <span class="hljs-number">5</span>:on    <span class="hljs-number">6</span>:off
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x770B;&#x5230;0&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x4E3A;on&#x4E86;&#x3002;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;man chkconfig &#x6765;&#x67E5;&#x770B;&#x5E2E;&#x52A9;&#xFF1A;</p>
+<pre><code class="lang-bash">--level levels
+
+    Specifies the run levels an operation should pertain to. It is  given  as  a string of numbers from <span class="hljs-number">0</span> to <span class="hljs-number">7</span>. For example, --level <span class="hljs-number">35</span> specifies runlevels <span class="hljs-number">3</span>              and <span class="hljs-number">5</span>.
+
+       &#x4F20;&#x7EDF;&#x7684;init &#x5B9A;&#x4E49;&#x4E86;<span class="hljs-number">7</span>&#x4E2A;&#x8FD0;&#x884C;&#x7EA7;&#xFF08;run level&#xFF09;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x7EA7;&#x522B;&#x90FD;&#x4EE3;&#x8868;&#x7CFB;&#x7EDF;&#x5E94;&#x8BE5;&#x8865;&#x5145;&#x8FD0;&#x884C;&#x7684;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x670D;&#x52A1;&#xFF1A;
+
+              &#xFF08;<span class="hljs-number">1</span>&#xFF09;<span class="hljs-number">0</span>&#x7EA7;&#x662F;&#x5B8C;&#x5168;&#x5173;&#x95ED;&#x7CFB;&#x7EDF;&#x7684;&#x7EA7;&#x522B;
+
+              &#xFF08;<span class="hljs-number">2</span>&#xFF09;<span class="hljs-number">1</span>&#x7EA7;&#x6216;&#x8005;S&#x7EA7;&#x4EE3;&#x8868;&#x5355;&#x7528;&#x6237;&#x6A21;&#x5F0F;
+
+              &#xFF08;<span class="hljs-number">3</span>&#xFF09;<span class="hljs-number">2</span>-<span class="hljs-number">5</span> &#x7EA7; &#x662F;&#x591A;&#x7528;&#x6237;&#x7EA7;&#x522B;
+
+              &#xFF08;<span class="hljs-number">4</span>&#xFF09;<span class="hljs-number">6</span>&#x7EA7; &#x662F; &#x91CD;&#x65B0;&#x5F15;&#x5BFC;&#x7684;&#x7EA7;&#x522B;
+</code></pre>
+<h3 id="%E9%85%8D%E7%BD%AE">&#x914D;&#x7F6E;</h3>
+<p>FTP &#x5B89;&#x88C5;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x5728;/etc/vsftpd/&#x76EE;&#x5F55;&#x4E0B;&#x4F1A;&#x6709;&#x5982;&#x4E0B;&#x6587;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li>vsftpd.conf: &#x4E3B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</li>
+<li>ftpusers: &#x6307;&#x5B9A;&#x54EA;&#x4E9B;&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;FTP&#x670D;&#x52A1;&#x5668;</li>
+<li>user_list: &#x6307;&#x5B9A;&#x7684;&#x7528;&#x6237;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;ftp&#x670D;&#x52A1;&#x5668;&#x7531;vsftpd.conf&#x6587;&#x4EF6;&#x4E2D;&#x7684;userlist_deny&#x7684;&#x53D6;&#x503C;&#x6765;&#x51B3;&#x5B9A;&#x3002;</li>
+</ul>
+<p>vsftpd.conf&#x4E2D;&#x5E38;&#x7528;&#x914D;&#x7F6E;&#x9879;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5C06; anonymous_enable&#x6CE8;&#x91CA;&#x6389;&#xFF0C;&#x7981;&#x6B62;&#x533F;&#x540D;&#x7528;&#x6237;</span>
+anonymous_<span class="hljs-built_in">enable</span>=NO
+
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x7A7A;&#x95F2;session&#x7684;&#x5931;&#x6548;&#x65F6;&#x95F4;</span>
+idle_session_timeout=<span class="hljs-number">600</span> 
+
+<span class="hljs-comment"># &#x662F;&#x5426;&#x5141;&#x8BB8;&#x4E0A;&#x4F20;/&#x4E0B;&#x8F7D;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</span>
+ascii_upload_<span class="hljs-built_in">enable</span>=YES
+ascii_download_<span class="hljs-built_in">enable</span>=YES 
+
+<span class="hljs-comment"># &#x9650;&#x5236;&#x6240;&#x6709;&#x7684;&#x672C;&#x5730;&#x7528;&#x6237;&#x5728;&#x81EA;&#x5BB6;&#x76EE;&#x5F55;</span>
+chroot_<span class="hljs-built_in">local</span>_user=YES 
+
+<span class="hljs-comment"># &#x662F;&#x5426;&#x5141;&#x8BB8;&#x4F7F;&#x7528;ls -R&#x7B49;&#x547D;&#x4EE4;</span>
+ls_recurse_<span class="hljs-built_in">enable</span>=YES 
+
+<span class="hljs-comment"># &#x5C06;userlist&#x4F5C;&#x4E3A;&#x5141;&#x8BB8;&#x767B;&#x9646;&#x7684;&#x6E05;&#x5355;</span>
+userlist_<span class="hljs-built_in">enable</span>=YES 
+userlist_deny=NO 
+
+<span class="hljs-comment"># &#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x5BF9;&#x533F;&#x540D;&#x7528;&#x6237;&#x65E0;&#x6548;</span>
+<span class="hljs-built_in">local</span>_root=/var/ftp_root
+</code></pre>
+<p>&#x589E;&#x52A0;FTP&#x8D26;&#x6237; <code>ftp_u</code></p>
+<pre><code class="lang-bash">[root@localhost ~]<span class="hljs-comment"># useradd ftp_u -s /sbin/nologin</span>
+[root@localhost ~]<span class="hljs-comment"># passwd ftp_u</span>
+</code></pre>
+<p>&#x5EFA;&#x7ACB;ftp&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x8BBF;&#x95EE;&#x6743;&#x9650;</p>
+<pre><code class="lang-bash">mkdir /var/ftp_root
+chown -R ftp_u /var/ftp_root
+<span class="hljs-comment">#&#x8BBE;&#x7F6E;&#x4E3A;&#x4E3B;&#x76EE;&#x5F55;&#x4E0D;&#x53EF;&#x5199;&#xFF0C; vsftpd 2.3.5 &#x5F00;&#x59CB;&#xFF0C;chroot &#x76EE;&#x5F55;&#x5FC5;&#x987B;&#x4E0D;&#x53EF;&#x5199;&#x3002;</span>
+chmod -R a-w /var/ftp_root
+
+<span class="hljs-comment">#&#x5728;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;download&#xFF0C;&#x8BBE;&#x7F6E;download&#x4E3A;&#x53EF;&#x5199;&#x7684;</span>
+mkdir /var/ftp_root/download
+chown -R ftp_u /var/ftp_root/download
+chmod -R <span class="hljs-number">755</span> /var/ftp_root/download
+</code></pre>
+<p>&#x7F16;&#x8F91;<code>user_list</code>&#x6587;&#x4EF6;&#xFF0C;&#x5141;&#x8BB8;<code>ftp_u</code>&#x7528;&#x6237;&#x8BBF;&#x95EE;FTP, &#x5728;<code>user_list</code>&#x4E2D;&#x52A0;&#x4E0A;<code>ftp_u</code></p>
+<p>&#x91CD;&#x542F;ftp</p>
+<pre><code class="lang-bash">/bin/systemctl restart vsftpd.service
+</code></pre>
+<h3 id="vsftpd-conf-%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0">vsftpd.conf &#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>listen_address=ip address</td>
+<td>&#x6307;&#x5B9A;&#x4FA6;&#x542C;IP</td>
+</tr>
+<tr>
+<td>listen_port=port_value</td>
+<td>&#x6307;&#x5B9A;&#x4FA6;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;21</td>
+</tr>
+<tr>
+<td>anonymous_enable=YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x533F;&#x540D;&#x5E10;&#x6237;</td>
+</tr>
+<tr>
+<td>local_enable=YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x672C;&#x5730;&#x7528;&#x6237;&#x767B;&#x5F55;</td>
+</tr>
+<tr>
+<td>nopriv_user=ftp</td>
+<td>&#x6307;&#x5B9A;vsftpd&#x670D;&#x52A1;&#x7684;&#x8FD0;&#x884C;&#x5E10;&#x6237;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x65F6;&#x4F7F;&#x7528;ftp</td>
+</tr>
+<tr>
+<td>write_enable=YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x5199;&#x5165;</td>
+</tr>
+<tr>
+<td>anon_upload_enable=YES</td>
+<td>&#x533F;&#x540D;&#x7528;&#x6237;&#x662F;&#x5426;&#x53EF;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>anon_mkdir_write_enable=YES</td>
+<td>&#x533F;&#x540D;&#x7528;&#x6237;&#x662F;&#x5426;&#x5EFA;&#x7ACB;&#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>dirmessage_enable=YES</td>
+<td>&#x8FDB;&#x5165;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x662F;&#x663E;&#x793A;&#x6B22;&#x8FCE;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x5EFA;&#x7ACB;.message&#x6587;&#x4EF6;&#x5728;&#x91CC;&#x9762;&#x5199;&#x6B22;&#x8FCE;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>xferlog_enable=YES</td>
+<td>&#x4E0A;&#x4F20;/&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;&#x65F6;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;</td>
+</tr>
+<tr>
+<td>connect_from_port_20=YES</td>
+<td>&#x662F;&#x5426;&#x4F7F;&#x7528;20&#x7AEF;&#x53E3;&#x4F20;&#x8F93;&#x6570;&#x636E;(&#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E3B;&#x52A8;&#x6A21;&#x5F0F;)</td>
+</tr>
+<tr>
+<td>chown_uploads=YES&#x3001;chown_username=whoever</td>
+<td>&#x4FEE;&#x6539;&#x533F;&#x540D;&#x7528;&#x6237;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x7684;&#x62E5;&#x6709;&#x8005;</td>
+</tr>
+<tr>
+<td>xferlog_file=/var/log/vsftpd.log</td>
+<td>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>xferlog_std_format=YES</td>
+<td>&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x6587;&#x4EF6;&#x65E5;&#x5FD7;</td>
+</tr>
+<tr>
+<td>idle_session_timeout=600</td>
+<td>&#x4F1A;&#x8BDD;&#x8D85;&#x65F6;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x5230;ftp&#x4F46;&#x672A;&#x64CD;&#x4F5C;</td>
+</tr>
+<tr>
+<td>data_connection_timeout=120</td>
+<td>&#x6570;&#x636E;&#x4F20;&#x8F93;&#x8D85;&#x65F6;</td>
+</tr>
+<tr>
+<td>async_abor_enable=YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528;sync&#x7B49;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td>ascii_upload_enable=YES&#x3001;ascii_download_enable=YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x4E0A;&#x4F20;/&#x4E0B;&#x8F7D;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>chroot_local_user=YES</td>
+<td>&#x9650;&#x5236;&#x6240;&#x6709;&#x7684;&#x672C;&#x5730;&#x7528;&#x6237;&#x5728;&#x81EA;&#x5BB6;&#x76EE;&#x5F55;</td>
+</tr>
+<tr>
+<td>chroot_list_enable=YES&#x3001;chroot_list_file=/etc/vsftpd/chroot_list</td>
+<td>&#x6307;&#x5B9A;&#x4E0D;&#x80FD;&#x79BB;&#x5F00;&#x5BB6;&#x76EE;&#x5F55;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5C06;&#x7528;&#x6237;&#x540D;&#x4E00;&#x4E2A;&#x4E00;&#x884C;&#x5199;&#x5728;/etc/vsftpd/chroot_list&#x6587;&#x4EF6;&#x91CC;&#xFF0C;&#x4F7F;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x65F6;&#x5FC5;&#x987B;chroot_local_user=NO</td>
+</tr>
+<tr>
+<td>ls_recurse_enable=YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x4F7F;&#x7528;ls -R&#x7B49;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td>listen=YES</td>
+<td>&#x5F00;&#x542F;ipv4&#x76D1;&#x542C;</td>
+</tr>
+<tr>
+<td>listen_ipv6=YES</td>
+<td>&#x5F00;&#x542F;ipv6&#x76D1;&#x542C;</td>
+</tr>
+<tr>
+<td>pam_service_name=vsftpd</td>
+<td>&#x4F7F;&#x7528;pam&#x6A21;&#x5757;&#x63A7;&#x5236;&#xFF0C;vsftpd&#x6587;&#x4EF6;&#x5728;/etc/pam.d&#x76EE;&#x5F55;&#x4E0B;</td>
+</tr>
+<tr>
+<td>userlist_enable=YES</td>
+<td>&#x6B64;&#x9009;&#x9879;&#x88AB;&#x6FC0;&#x6D3B;&#x540E;&#xFF0C;vsftpd&#x5C06;&#x8BFB;&#x53D6;userlist_file&#x53C2;&#x6570;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x5217;&#x8868;&#x3002;&#x5F53;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x767B;&#x5F55;FTP&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x8BE5;&#x7528;&#x6237;&#x5728;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x4E4B;&#x524D;&#x5C31;&#x88AB;&#x7981;&#x6B62;&#x4E86;&#x3002;&#x5373;&#x8BE5;&#x7528;&#x6237;&#x540D;&#x8F93;&#x5165;&#x540E;&#xFF0C;vsftpd&#x67E5;&#x5230;&#x8BE5;&#x7528;&#x6237;&#x540D;&#x5728;&#x5217;&#x8868;&#x4E2D;&#xFF0C;vsftpd&#x5C31;&#x76F4;&#x63A5;&#x7981;&#x6B62;&#x6389;&#x8BE5;&#x7528;&#x6237;&#xFF0C;&#x4E0D;&#x4F1A;&#x518D;&#x8FDB;&#x884C;&#x8BE2;&#x95EE;&#x5BC6;&#x7801;&#x7B49;&#x540E;&#x7EED;&#x6B65;&#x805A;</td>
+</tr>
+<tr>
+<td>userlist_deny=YES</td>
+<td>&#x51B3;&#x5B9A;&#x7981;&#x6B62;&#x8FD8;&#x662F;&#x53EA;&#x5141;&#x8BB8;&#x7531;userlist_file&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x767B;&#x5F55;FTP&#x670D;&#x52A1;&#x5668;&#x3002;&#x6B64;&#x9009;&#x9879;&#x5728;userlist_enable &#x9009;&#x9879;&#x542F;&#x52A8;&#x540E;&#x624D;&#x751F;&#x6548;&#x3002;YES&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x7981;&#x6B62;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x767B;&#x5F55;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x4E0D;&#x5411;&#x8FD9;&#x4E9B;&#x7528;&#x6237;&#x53D1;&#x51FA;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x7684;&#x63D0;&#x793A;&#x3002;NO&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x767B;&#x5F55;FTP&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+<tr>
+<td>tcp_wrappers=YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;tcp_wrappers&#x7BA1;&#x7406;</td>
+</tr>
+<tr>
+<td>local_root=/home/ftp</td>
+<td>&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#xFF0C;&#x5BF9;&#x533F;&#x540D;&#x7528;&#x6237;&#x65E0;&#x6548;</td>
+</tr>
+<tr>
+<td>anon_max_rate</td>
+<td>&#x533F;&#x540D;&#x7528;&#x6237;&#x7684;&#x6700;&#x5927;&#x4F20;&#x8F93;&#x901F;&#x5EA6;&#xFF0C;&#x5355;&#x4F4D;&#x662F;Byts/s</td>
+</tr>
+<tr>
+<td>local_max_rate</td>
+<td>&#x672C;&#x5730;&#x7528;&#x6237;&#x7684;&#x6700;&#x5927;&#x4F20;&#x8F93;&#x901F;&#x5EA6;&#xFF0C;&#x5355;&#x4F4D;&#x662F;Byts/s</td>
+</tr>
+<tr>
+<td>download_enable= YES</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x4E0B;&#x8F7D;</td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../linux/index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Linux 相关"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
