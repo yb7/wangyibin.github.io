@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>registry | </title>
+        <title>使用tv4进行数据验证 | </title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,8 @@
         
     
     
-    <link rel="next" href="../model/index.html" />
     
-    
-    <link rel="prev" href="../core/context.html" />
+    <link rel="prev" href="../json-schema/complex_schema.html" />
     
 
         
@@ -36,7 +34,7 @@
     
 
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="Fri May 08 2015 09:23:00 GMT+0800 (中国标准时间)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Fri May 08 2015 09:23:00 GMT+0800 (中国标准时间)">
     
 
 <div class="book-summary">
@@ -97,7 +95,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="core/registry.html">
+        <li class="chapter " data-level="1.2" data-path="core/registry.html">
             
                 
                     <a href="../core/registry.html">
@@ -310,7 +308,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="json-schema/tv4_validator.html">
+        <li class="chapter active" data-level="3.3" data-path="json-schema/tv4_validator.html">
             
                 
                     <a href="../json-schema/tv4_validator.html">
@@ -433,80 +431,116 @@
                 
                     <section class="normal" id="section-">
                     
-                        <p>&#x7528;&#x4E8E;&#x5BFC;&#x51FA;&#x5904;&#x7406;Models&#x7684;DataSources&#x7684;&#x65B9;&#x6CD5;</p>
-<p><img src="datasource-connector.png" alt="Model&#x7684;&#x5904;&#x7406;&#x7ED3;&#x6784;"></p>
-<p>&#x6A21;&#x578B;&#x6784;&#x5EFA;&#x7684;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
-<ol>
-<li>Loopback&#x63D0;&#x4F9B;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#xFF1A;Loopback Definition Language&#xFF08;LDL&#xFF09;&#x3002;&#x4F7F;&#x7528;LDL&#x53EF;&#x4EE5;&#x901A;&#x8FC7;JSON&#x6216;&#x8005;JavaScript&#x8FD9;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x6765;&#x6784;&#x5EFA;&#x6A21;&#x578B;&#x3002;</li>
-<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;ModelBuilder&#x6216;&#x8005;DataSource&#x7684;&#x5B9E;&#x4F8B;&#x3002;DataSource&#x7EE7;&#x627F;&#x81EA;ModelBuilder&#x3002;<ul>
-<li>ModelBuilder&#x8D1F;&#x8D23;&#x6839;&#x636E;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x751F;&#x6210;&#x6A21;&#x578B;&#x7684;JavaScript&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</li>
-<li>DataSource&#x4ECE;ModelBuilder&#x4E2D;&#x7EE7;&#x627F;&#x4E86;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;</li>
-</ul>
-</li>
-<li>&#x901A;&#x8FC7;&#x4F7F;&#x7528;ModelBuilder&#x6216;&#x8005;DataSource&#x4ECE;&#x6A21;&#x578B;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x4E2D;&#x6784;&#x5EFA;&#x6A21;&#x578B;&#x7C7B;&#x7684;JavaScript&#x7684;&#x6784;&#x9020;&#x5668;&#x3002;
-ModelBuilder&#x4E2D;&#x6784;&#x5EFA;&#x51FA;&#x6765;&#x6A21;&#x578B;&#x7C7B;&#xFF0C;&#x800C;&#x540E;&#x4F1A;&#x5173;&#x8054;&#x5230;DataSource&#x4E0A;&#xFF0C;&#x4EE5;&#x6CE8;&#x5165;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;&#x3002;</li>
-<li>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x6B65;&#x7684;&#x4E00;&#x4E2A;&#x6784;&#x6210;&#x90E8;&#x5206;&#xFF0C;DataSource&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x6765;&#x521D;&#x59CB;&#x5316;&#x5E95;&#x5C42;&#x7684;&#x8FDE;&#x63A5;&#x5668;&#xFF08;Connector&#xFF09;&#xFF0C;
-&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E86;&#x6784;&#x5EFA;&#x8FDE;&#x63A5;&#x5668;&#x7684;&#x53C2;&#x6570;&#x3002;Connector&#x4E0E;DataSource&#x76F8;&#x4EA4;&#x6765;&#x5B9E;&#x73B0;DataAccessObject&#x4E2D;&#x5B9A;&#x4E49;
-&#x7684;&#x5177;&#x4F53;&#x65B9;&#x6CD5;&#xFF08;&#x5982;find&#xFF0C;save&#x7B49;&#xFF09;&#xFF0C;&#x4EE5;&#x6CE8;&#x5165;&#x5230;&#x6700;&#x7EC8;&#x7684;model&#x7C7B;&#x578B;&#x4E2D;&#x53BB;&#x3002;</li>
-</ol>
-<p>DataSource&#x5BF9;&#x8C61;&#x5728;Loopback&#x4E2D;&#x662F;&#x4E00;&#x4E2A;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#x5BF9;&#x8C61;&#x3002;Loopback&#x4F7F;&#x7528;&#x8BE5;&#x5BF9;&#x8C61;&#x53BB;&#x6574;&#x5408;&#x540E;&#x7AEF;&#x7CFB;&#x7EDF;&#x3002;&#x5B83;&#x662F;
-&#x6A21;&#x578B;&#x7C7B;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x903B;&#x8F91;&#x7684;&#x5DE5;&#x5382;&#x3002;&#x901A;&#x8FC7;DataSource&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x4FBF;&#x7684;&#x8854;&#x63A5;&#x5404;&#x79CD;Connector&#xFF0C;DataSource&#x4E3A;
-&#x9694;&#x79BB;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4E0E;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x4E86;&#x5FC5;&#x8981;&#x7684;&#x62BD;&#x8C61;&#x3002;</p>
-<p>&#x5728;<code>loopback-datasource-juggler/lib/dao.js</code>&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;DataAccessObject&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
-<pre><code class="lang-js">DataAccessObject.find = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">find</span><span class="hljs-params">(query, options, cb)</span> </span>{
-  <span class="hljs-comment">// &#x6B64;&#x5904;&#x7701;&#x7565;n&#x884C;&#x4EE3;&#x7801;</span>
+                        <p>&#xFEFF;## &#x901A;&#x8FC7;tv4&#x8FDB;&#x884C;JSON Schema&#x9A8C;&#x8BC1;
+<a href="https://github.com/geraintluff/tv4" target="_blank">tv4</a>&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6548;&#x7684;JSON Schema&#x9A8C;&#x8BC1;&#x5E93;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> tv4 = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;tv4&apos;</span>);
+<span class="hljs-keyword">var</span> _ = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;lodash&apos;</span>);
 
-  <span class="hljs-keyword">var</span> near = query &amp;&amp; geo.nearFilter(query.where);
-  <span class="hljs-comment">// &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5728;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x65F6;&#x63D0;&#x4F9B;DataSource&#x7684;&#x5E95;&#x5C42;connector&#x62BD;&#x8C61;&#x6765;&#x9694;&#x79BB;&#x4E0D;&#x540C;&#x6570;&#x636E;&#xFF0C;</span>
-  <span class="hljs-comment">// &#x6765;&#x5E26;&#x7684;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x5DEE;&#x522B;</span>
-  <span class="hljs-keyword">var</span> supportsGeo = !!<span class="hljs-keyword">this</span>.getDataSource().connector.buildNearFilter;
 
-  <span class="hljs-comment">// &#x6B64;&#x5904;&#x7701;&#x7565;n&#x884C;&#x4EE3;&#x7801;</span>
-};
-</code></pre>
-<p><code>lib\registry.js</code>&#x63D0;&#x4F9B;&#x4E86;&#x6A21;&#x578B;&#x7684;&#x521B;&#x5EFA;&#x80FD;&#x529B;:<code>createModel</code></p>
-<pre><code class="lang-js">registry.createModel = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(name, properties, options)</span> </span>{
-  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">arguments</span>.length === <span class="hljs-number">1</span> &amp;&amp; <span class="hljs-keyword">typeof</span> name === <span class="hljs-string">&apos;object&apos;</span>) {
-    <span class="hljs-keyword">var</span> config = name;
-    name = config.name;
-    properties = config.properties;
-    options = buildModelOptionsFromConfig(config);
-
-    assert(<span class="hljs-keyword">typeof</span> name === <span class="hljs-string">&apos;string&apos;</span>,
-      <span class="hljs-string">&apos;The model-config property `name` must be a string&apos;</span>);
-  }
-
-  options = options || {};
-  <span class="hljs-keyword">var</span> BaseModel = options.base || options.super;
-
-  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> BaseModel === <span class="hljs-string">&apos;string&apos;</span>) {
-    <span class="hljs-keyword">var</span> baseName = BaseModel;
-    <span class="hljs-comment">// getModel&#x65B9;&#x6CD5;&#x4ECE;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x83B7;&#x53D6;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;ModelBuilder&#x6784;&#x5EFA;&#x7684;&#x6A21;&#x578B;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
-    BaseModel = <span class="hljs-keyword">this</span>.getModel(BaseModel);
-
-    <span class="hljs-keyword">if</span> (BaseModel === <span class="hljs-literal">undefined</span>) {
-      <span class="hljs-keyword">if</span> (baseName === <span class="hljs-string">&apos;DataModel&apos;</span>) {
-        <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">&apos;Model `%s` is extending deprecated `DataModel. &apos;</span> +
-          <span class="hljs-string">&apos;Use `PeristedModel` instead.&apos;</span>, name);
-        BaseModel = <span class="hljs-keyword">this</span>.PersistedModel;
-      } <span class="hljs-keyword">else</span> {
-        <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">&apos;Model `%s` is extending an unknown model `%s`. &apos;</span> +
-          <span class="hljs-string">&apos;Using `PersistedModel` as the base.&apos;</span>, name, baseName);
+<span class="hljs-comment">/**
+ * &#x5B9A;&#x4E49;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x7684;Schema
+ * additionalProperties: false &#x4EE3;&#x8868;&#x4E0D;&#x652F;&#x6301;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;
+ **/</span>
+<span class="hljs-keyword">var</span> schemaForUpdate = {
+  id: <span class="hljs-string">&apos;cityupdate#&apos;</span>,
+  additionalProperties: <span class="hljs-literal">false</span>,
+  properties: {
+    code: {type: <span class="hljs-string">&apos;string&apos;</span>},
+    name: {type: <span class="hljs-string">&apos;string&apos;</span>},
+    pinyin: {type: <span class="hljs-string">&apos;string&apos;</span>},
+    latitude: {type: <span class="hljs-string">&apos;number&apos;</span>},
+    longitude: {type: <span class="hljs-string">&apos;number&apos;</span>},
+    woeid: {type: <span class="hljs-string">&apos;number&apos;</span>},
+    enable: {type: <span class="hljs-string">&apos;boolean&apos;</span>},
+    hot: {type: <span class="hljs-string">&apos;boolean&apos;</span>},
+    ads: {
+      type: <span class="hljs-string">&apos;object&apos;</span>,
+      properties: {
+        top: {
+          type: <span class="hljs-string">&apos;array&apos;</span>,
+          items: { $ref: <span class="hljs-string">&apos;#/definitions/adItem&apos;</span> }
+        }
+      }
+    }
+  },
+  definitions: {
+    adItem: {
+      type: <span class="hljs-string">&apos;object&apos;</span>,
+      required: [<span class="hljs-string">&apos;imageKey&apos;</span>, <span class="hljs-string">&apos;description&apos;</span>],
+      additionalProperties: <span class="hljs-literal">false</span>,
+      properties: {
+        imageKey: {type: <span class="hljs-string">&apos;string&apos;</span>},
+        description: {type: <span class="hljs-string">&apos;string&apos;</span>}
       }
     }
   }
-
-  BaseModel = BaseModel || <span class="hljs-keyword">this</span>.PersistedModel;
-
-  <span class="hljs-keyword">var</span> model = BaseModel.extend(name, properties, options);
-
-  <span class="hljs-comment">// try to attach</span>
-  <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">this</span>.autoAttachModel(model);
-  } <span class="hljs-keyword">catch</span> (e) {}
-
-  <span class="hljs-keyword">return</span> model;
 };
+
+<span class="hljs-comment">/**
+ * &#x5B9A;&#x4E49;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x7684;Schema
+ * &#x5728;&#x66F4;&#x65B0;&#x7684;Schema&#x57FA;&#x7840;&#x4E0A;&#x589E;&#x52A0;required&#x5C5E;&#x6027;
+ * &#x5373;&#x5728;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x65F6; &apos;code&apos;, &apos;name&apos;, &apos;pinyin&apos; &#x4E09;&#x4E2A;&#x5B57;&#x6BB5;&#x4E3A;&#x5FC5;&#x586B;
+ **/</span>
+<span class="hljs-keyword">var</span> schemaForCreate = _.defaults({
+  id: <span class="hljs-string">&apos;citycreate#&apos;</span>,
+  required: [<span class="hljs-string">&apos;code&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;pinyin&apos;</span>]
+}, schemaForUpdate);
+
+<span class="hljs-comment">/**
+ * &#x5C06;&#x4E24;&#x4E2A;Schema&#x52A0;&#x5165;&#x5230;tv4&#x4E2D;
+ **/</span>
+tv4.addSchema(schemaForCreate);
+tv4.addSchema(schemaForUpdate);
+
+<span class="hljs-keyword">var</span> Schema = <span class="hljs-built_in">module</span>.exports = {};
+
+<span class="hljs-comment">/**
+ * &#x5BFC;&#x51FA;tv4&#x7684;json&#x9A8C;&#x8BC1;
+ * &#x8FD9;&#x91CC;&#x4F7F;&#x7528;validateMultiple&#x610F;&#x601D;&#x662F;&#x6267;&#x884C;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x9A8C;&#x8BC1;&#xFF0C;&#x6536;&#x96C6;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;
+ **/</span>
+Schema.validateForCreate = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(instance)</span> </span>{
+  <span class="hljs-keyword">return</span> tv4.validateMultiple(instance, <span class="hljs-string">&apos;citycreate#&apos;</span>);
+};
+Schema.validateForUpdate = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(instance)</span> </span>{
+  <span class="hljs-keyword">return</span> tv4.validateMultiple(instance, <span class="hljs-string">&apos;cityupdate#&apos;</span>);
+};
+</code></pre>
+<p>Test Case&#x4E66;&#x5199;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> assert = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;assert&apos;</span>);
+
+<span class="hljs-keyword">var</span> CitySchema = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../common/models/city.schema&apos;</span>);
+
+describe(<span class="hljs-string">&apos;city model&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+  describe(<span class="hljs-string">&apos;#schema&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    it(<span class="hljs-string">&apos;should validate city create&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">var</span> validCityJson = {
+        code: <span class="hljs-string">&apos;xx&apos;</span>,
+        name: <span class="hljs-string">&apos;xx&apos;</span>,
+        pinyin: <span class="hljs-string">&apos;xx&apos;</span>,
+        latitude: <span class="hljs-number">1.0</span>,
+        longitude: <span class="hljs-number">1.0</span>,
+        woeid: <span class="hljs-number">10</span>,
+        enable: <span class="hljs-literal">true</span>,
+        hot: <span class="hljs-literal">true</span>
+      };
+      assert.equal(CitySchema.validateForCreate(validCityJson).valid, <span class="hljs-literal">true</span>, <span class="hljs-string">&apos;&#x6B63;&#x786E;&#x7684;&#x683C;&#x5F0F;&apos;</span>);
+      assert.equal(CitySchema.validateForCreate({}).valid, <span class="hljs-literal">false</span>, <span class="hljs-string">&apos;&#x5FC5;&#x586B;&#x9879;&#x5FC5;&#x987B;&#x586B;&#x5199;&apos;</span>);
+      assert.equal(CitySchema.validateForCreate({x:<span class="hljs-number">3</span>}).valid, <span class="hljs-literal">false</span>, <span class="hljs-string">&apos;&#x4E0D;&#x5141;&#x8BB8;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&apos;</span>);
+    });
+    it(<span class="hljs-string">&apos;should validate city update&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">var</span> validUpdateJson = {
+        pinyin: <span class="hljs-string">&apos;xx&apos;</span>,
+        latitude: <span class="hljs-number">1.0</span>,
+        longitude: <span class="hljs-number">1.0</span>,
+        woeid: <span class="hljs-number">10</span>
+      };
+      assert.equal(CitySchema.validateForUpdate(validUpdateJson).valid, <span class="hljs-literal">true</span>, <span class="hljs-string">&apos;&#x6B63;&#x786E;&#x7684;&#x683C;&#x5F0F;&apos;</span>);
+      assert.equal(CitySchema.validateForUpdate({ads:{top:[{imageKey:<span class="hljs-string">&apos;ee&apos;</span>}]}}).valid, <span class="hljs-literal">false</span>, <span class="hljs-string">&apos;&#x5E7F;&#x544A;&#x6761;&#x76EE;&#x5FC5;&#x987B;&#x5B8C;&#x6574;&apos;</span>);
+      assert.equal(CitySchema.validateForUpdate({ads:{top:[{imageKey:<span class="hljs-string">&apos;ee&apos;</span>, description:<span class="hljs-string">&apos;xx&apos;</span>}]}}).valid, <span class="hljs-literal">true</span>);
+      assert.equal(CitySchema.validateForUpdate({x:<span class="hljs-number">3</span>}).valid, <span class="hljs-literal">false</span>, <span class="hljs-string">&apos;&#x4E0D;&#x5141;&#x8BB8;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&apos;</span>);
+    });
+  });
+});
 </code></pre>
 
                     
@@ -518,10 +552,8 @@ ModelBuilder&#x4E2D;&#x6784;&#x5EFA;&#x51FA;&#x6765;&#x6A21;&#x578B;&#x7C7B;&#xF
         </div>
 
         
-        <a href="../core/context.html" class="navigation navigation-prev " aria-label="Previous page: context"><i class="fa fa-angle-left"></i></a>
+        <a href="../json-schema/complex_schema.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 构建复杂的Schema"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../model/index.html" class="navigation navigation-next " aria-label="Next page: 模型定义"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

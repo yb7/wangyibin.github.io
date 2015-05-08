@@ -1,0 +1,637 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>构建复杂的Schema | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../json-schema/tv4_validator.html" />
+    
+    
+    <link rel="prev" href="../json-schema/basics/regular_expressions.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Fri May 08 2015 09:23:00 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="core/index.html">
+            
+                
+                    <a href="../core/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Loopback核心
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="core/context.html">
+            
+                
+                    <a href="../core/context.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        context
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="core/registry.html">
+            
+                
+                    <a href="../core/registry.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        registry
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="model/index.html">
+            
+                
+                    <a href="../model/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        模型定义
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="model/validation.html">
+            
+                
+                    <a href="../model/validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        模型验证
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="model/remotemethod.html">
+            
+                
+                    <a href="../model/remotemethod.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        远程方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="model/nativedbaccess.html">
+            
+                
+                    <a href="../model/nativedbaccess.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        原生数据库操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="model/geo.html">
+            
+                
+                    <a href="../model/geo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        GEO数据查询
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="json-schema/index.html">
+            
+                
+                    <a href="../json-schema/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        JSON Schema
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="json-schema/basics.html">
+            
+                
+                    <a href="../json-schema/basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        基本概念
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="json-schema/basics/type_keywords.html">
+            
+                
+                    <a href="../json-schema/basics/type_keywords.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        关键字`type`
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="json-schema/basics/generic_keywords.html">
+            
+                
+                    <a href="../json-schema/basics/generic_keywords.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        一般性关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="json-schema/basics/combining_schemas.html">
+            
+                
+                    <a href="../json-schema/basics/combining_schemas.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        模式组合
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="json-schema/basics/regular_expressions.html">
+            
+                
+                    <a href="../json-schema/basics/regular_expressions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        正则匹配
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="json-schema/complex_schema.html">
+            
+                
+                    <a href="../json-schema/complex_schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        构建复杂的Schema
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="json-schema/tv4_validator.html">
+            
+                
+                    <a href="../json-schema/tv4_validator.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        使用tv4进行数据验证
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="%E6%9E%84%E5%BB%BA%E5%A4%8D%E6%9D%82%E7%9A%84schema">&#x6784;&#x5EFA;&#x590D;&#x6742;&#x7684;Schema</h2>
+<p>&#x901A;&#x5E38;&#x5728;&#x6784;&#x5EFA;&#x5199;&#x4EE3;&#x7801;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x4F1A;&#x8003;&#x8651;&#x201C;&#x7ED3;&#x6784;&#x5316;&#x201D;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF0C;
+&#x901A;&#x8FC7;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x5757;&#x6765;&#x907F;&#x514D;&#x7B80;&#x5355;&#x7684;&#x590D;&#x5236;&#x9ECF;&#x8D34;&#x9020;&#x6210;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x540C;&#x6837;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;JSON Schema&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x6709;&#x7528;&#x7684;&#x7ED3;&#x6784;&#x5206;&#x6210;&#x5404;&#x4E2A;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x90E8;&#x4EF6;&#x3002;</p>
+<h3 id="%E9%87%8D%E7%94%A8">&#x91CD;&#x7528;</h3>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x8BB0;&#x5F55;(<code>customer</code>)&#xFF0C;&#x8BE5;&#x8BB0;&#x5F55;&#x4E2D;&#x7684;&#x5BA2;&#x6237;&#x53EF;&#x80FD;&#x540C;&#x65F6;&#x5305;&#x542B;&#x90AE;&#x5BC4;&#x5730;&#x5740;&#x4E0E;&#x8D26;&#x5355;&#x5730;&#x5740;&#x3002;
+&#x5730;&#x5740;&#x7684;&#x7ED3;&#x6784;&#x603B;&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;street address, city&#x548C;state&#xFF0C;
+&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4E0D;&#x60F3;&#x5728;&#x6BCF;&#x4E2A;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x5730;&#x5740;&#x7684;&#x5730;&#x65B9;&#x91CD;&#x590D;&#x5B9A;&#x4E49;&#x8FD9;&#x4E9B;&#x7ED3;&#x6784;&#x3002;
+&#x4E0D;&#x4EC5;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x505A;&#x4F1A;&#x4F7F;&#x5F97;&#x6574;&#x4E2A;Schema&#x53D8;&#x5F97;&#x81C3;&#x80BF;&#xFF0C;&#x800C;&#x4E14;&#x4F7F;&#x5F97;&#x5728;&#x5C06;&#x6765;&#x8FDB;&#x884C;&#x7ED3;&#x6784;&#x66F4;&#x65B0;&#x65F6;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x3002;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4EE5;&#x540E;&#x9700;&#x8981;&#x5728;&#x5730;&#x5740;&#x7ED3;&#x6784;&#x4E2D;&#x589E;&#x52A0;country(&#x56FD;&#x5BB6;)&#x5B57;&#x6BB5;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x91CD;&#x590D;&#x5B9A;&#x4E49;&#x7684;&#x5730;&#x5740;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x53BB;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x5730;&#x5740;&#x7ED3;&#x6784;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x7528;&#x5230;&#x7684;&#x5730;&#x65B9;&#x8FDB;&#x884C;&#x91CD;&#x7528;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x6807;&#x51C6;&#x7ED3;&#x6784;&#x3002;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+  <span class="hljs-string">&quot;properties&quot;</span>: {
+    <span class="hljs-string">&quot;street_address&quot;</span>: { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+    <span class="hljs-string">&quot;city&quot;</span>:           { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+    <span class="hljs-string">&quot;state&quot;</span>:          { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> }
+  },
+  <span class="hljs-string">&quot;required&quot;</span>: [<span class="hljs-string">&quot;street_address&quot;</span>, <span class="hljs-string">&quot;city&quot;</span>, <span class="hljs-string">&quot;state&quot;</span>]
+}
+</code></pre>
+<p>&#x65E2;&#x7136;&#x6211;&#x4EEC;&#x6253;&#x7B97;&#x91CD;&#x7528;&#x8FD9;&#x6837;&#x7684;schema&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#xFF08;&#x975E;&#x5FC5;&#x987B;&#xFF09;&#x5C06;&#x5B83;&#x653E;&#x7F6E;&#x5728;&#x7236;&#x7EA7;schema&#x7684;<code>definitions</code>&#x5B9A;&#x4E49;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;definitions&quot;</span>: {
+    <span class="hljs-string">&quot;address&quot;</span>: {
+      <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+      <span class="hljs-string">&quot;properties&quot;</span>: {
+        <span class="hljs-string">&quot;street_address&quot;</span>: { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+        <span class="hljs-string">&quot;city&quot;</span>:           { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+        <span class="hljs-string">&quot;state&quot;</span>:          { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> }
+      },
+      <span class="hljs-string">&quot;required&quot;</span>: [<span class="hljs-string">&quot;street_address&quot;</span>, <span class="hljs-string">&quot;city&quot;</span>, <span class="hljs-string">&quot;state&quot;</span>]
+    }
+  }
+}
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x901A;&#x8FC7;<code>$ref</code>&#x5173;&#x952E;&#x5B57;&#x6765;&#x5F15;&#x7528;&#x5230;&#x8FD9;&#x4E2A;schema&#x3002;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x5C06;<code>$ref</code>&#x7684;&#x503C;&#x8BBE;&#x5B9A;&#x4E3A;&#x8BE5;address&#x7684;&#x903B;&#x8F91;&#x5730;&#x5740;&#x3002;
+&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{ <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;#/definitions/address&quot;</span> }
+</code></pre>
+<p><code>$ref</code>&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x79F0;&#x4E3A;<a href="http://tools.ietf.org/html/draft-pbryan-zyp-json-pointer-02" target="_blank">JSON Pointer</a></p>
+<blockquote>
+<p>JSON Pointer&#x4E0E;XML&#x4E2D;&#x7684;XPath&#x5177;&#x6709;&#x76F8;&#x4F3C;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x4F46;&#x903B;&#x8F91;&#x66F4;&#x4E3A;&#x7B80;&#x5355;</p>
+</blockquote>
+<p>&#x4E95;&#x53F7;<code>#</code>&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x659C;&#x6760;<code>/</code>&#x5206;&#x9694;&#x4E86;&#x5230;&#x8FBE;&#x76EE;&#x6807;&#x6587;&#x6863;&#x7684;&#x79FB;&#x52A8;&#x8DEF;&#x5F84;&#x3002;&#x56E0;&#x6B64;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;
+<code>#/definitions/address</code>&#x4EE3;&#x8868;&#x7740;&#xFF1A;</p>
+<ol>
+<li>&#x79FB;&#x52A8;&#x5230;&#x6587;&#x6863;&#x7684;&#x6839;&#x90E8;</li>
+<li>&#x627E;&#x5230;&#x952E;&#x503C;<code>definitions</code></li>
+<li>&#x5728;<code>definitions</code>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x627E;&#x5230;<code>address</code></li>
+</ol>
+<p><code>$ref</code>&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;
+&#x6240;&#x4EE5;&#x5982;&#x679C;&#x4F60;&#x5C06;&#x4F60;&#x7684;&#x7ED3;&#x6784;&#x5B9A;&#x4E49;&#x5728;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5F15;&#x7528;&#x3002;</p>
+<pre><code class="lang-json">{ <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;separate_file.json#/address&quot;</span> }
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x5C06;&#x4F1A;&#x5728;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x7684;&#x65C1;&#x8FB9;&#x88C5;&#x8F7D;address schema&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x5B9A;&#x4E49;&#x6211;&#x4EEC;&#x7684;<code>customer schema</code></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;$schema&quot;</span>: <span class="hljs-string">&quot;http://json-schema.org/draft-04/schema#&quot;</span>,
+
+  <span class="hljs-string">&quot;definitions&quot;</span>: {
+    <span class="hljs-string">&quot;address&quot;</span>: {
+      <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+      <span class="hljs-string">&quot;properties&quot;</span>: {
+        <span class="hljs-string">&quot;street_address&quot;</span>: { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+        <span class="hljs-string">&quot;city&quot;</span>:           { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+        <span class="hljs-string">&quot;state&quot;</span>:          { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> }
+      },
+      <span class="hljs-string">&quot;required&quot;</span>: [<span class="hljs-string">&quot;street_address&quot;</span>, <span class="hljs-string">&quot;city&quot;</span>, <span class="hljs-string">&quot;state&quot;</span>]
+    }
+  },
+
+  <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+
+  <span class="hljs-string">&quot;properties&quot;</span>: {
+    <span class="hljs-string">&quot;billing_address&quot;</span>: { <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;#/definitions/address&quot;</span> },
+    <span class="hljs-string">&quot;shipping_address&quot;</span>: { <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;#/definitions/address&quot;</span> }
+  }
+}
+</code></pre>
+<p>&#x5982;&#x4E0B;&#x7684;json&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x9A8C;&#x8BC1;&#x901A;&#x8FC7;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;shipping_address&quot;</span>: {
+    <span class="hljs-string">&quot;street_address&quot;</span>: <span class="hljs-string">&quot;1600 Pennsylvania Avenue NW&quot;</span>,
+    <span class="hljs-string">&quot;city&quot;</span>: <span class="hljs-string">&quot;Washington&quot;</span>,
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;DC&quot;</span>
+  },
+  <span class="hljs-string">&quot;billing_address&quot;</span>: {
+    <span class="hljs-string">&quot;street_address&quot;</span>: <span class="hljs-string">&quot;1st Street SE&quot;</span>,
+    <span class="hljs-string">&quot;city&quot;</span>: <span class="hljs-string">&quot;Washington&quot;</span>,
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;DC&quot;</span>
+  }
+}
+</code></pre>
+<h3 id="%E6%89%A9%E5%B1%95%E6%80%A7">&#x6269;&#x5C55;&#x6027;</h3>
+<p>&#x5F53;<code>$ref</code>&#x4E0E;<code>$allOf</code>&#x3001;<code>$anyOf</code>&#x548C;<code>$oneOf</code>&#x7ED3;&#x5408;&#x65F6;&#xFF0C;&#x51F8;&#x663E;&#x51FA;&#x5176;&#x4EF7;&#x503C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4EE5;shipping address&#xFF08;&#x90AE;&#x5BC4;&#x5730;&#x5740;&#xFF09;&#x4E3A;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x77E5;&#x9053;&#x6539;&#x5730;&#x5740;&#x662F;&#x4E00;&#x4E2A;&#x4F4F;&#x5B85;&#x5730;&#x5740;(residential&#xFF09;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;&#x529E;&#x516C;&#x5730;&#x5740;(business)&#xFF0C;
+&#x56E0;&#x4E3A;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5730;&#x5740;&#x914D;&#x9001;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;&#x3002;&#x800C;&#x5BF9;&#x4E8E;billing address&#xFF08;&#x8D26;&#x5355;&#x5730;&#x5740;&#xFF09;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x6807;&#x6CE8;&#x5730;&#x5740;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8C03;&#x6574;shipping address&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;shipping_address&quot;</span>: { <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;#/definitions/address&quot;</span> }
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;<code>allOf</code>&#x5173;&#x952E;&#x5B57;&#x7EC4;&#x5408;&#x6838;&#x5FC3;&#x7684;address schema&#x5B9A;&#x4E49;&#x4E0E;&#x989D;&#x5916;&#x7684;&#x5730;&#x5740;&#x7C7B;&#x578B;&#x63CF;&#x8FF0;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;shipping_address&quot;</span>: {
+  <span class="hljs-string">&quot;allOf&quot;</span>: [
+    <span class="hljs-comment">// Here, we include our &quot;core&quot; address schema...</span>
+    { <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;#/definitions/address&quot;</span> },
+
+    <span class="hljs-comment">// ...and then extend it with stuff specific to a shipping</span>
+    <span class="hljs-comment">// address</span>
+    { <span class="hljs-string">&quot;properties&quot;</span>: {
+        <span class="hljs-string">&quot;type&quot;</span>: { <span class="hljs-string">&quot;enum&quot;</span>: [ <span class="hljs-string">&quot;residential&quot;</span>, <span class="hljs-string">&quot;business&quot;</span> ] }
+      },
+      <span class="hljs-string">&quot;required&quot;</span>: [<span class="hljs-string">&quot;type&quot;</span>]
+    }
+  ]
+}
+</code></pre>
+<p>&#x5B8C;&#x6574;&#x7684;schema&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;$schema&quot;</span>: <span class="hljs-string">&quot;http://json-schema.org/draft-04/schema#&quot;</span>,
+
+  <span class="hljs-string">&quot;definitions&quot;</span>: {
+    <span class="hljs-string">&quot;address&quot;</span>: {
+      <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+      <span class="hljs-string">&quot;properties&quot;</span>: {
+        <span class="hljs-string">&quot;street_address&quot;</span>: { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+        <span class="hljs-string">&quot;city&quot;</span>:           { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> },
+        <span class="hljs-string">&quot;state&quot;</span>:          { <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;string&quot;</span> }
+      },
+      <span class="hljs-string">&quot;required&quot;</span>: [<span class="hljs-string">&quot;street_address&quot;</span>, <span class="hljs-string">&quot;city&quot;</span>, <span class="hljs-string">&quot;state&quot;</span>]
+    }
+  },
+
+  <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+
+  <span class="hljs-string">&quot;properties&quot;</span>: {
+    <span class="hljs-string">&quot;billing_address&quot;</span>: { <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;#/definitions/address&quot;</span> },
+    <span class="hljs-string">&quot;shipping_address&quot;</span>: {
+      <span class="hljs-string">&quot;allOf&quot;</span>: [
+        { <span class="hljs-string">&quot;$ref&quot;</span>: <span class="hljs-string">&quot;#/definitions/address&quot;</span> },
+        { <span class="hljs-string">&quot;properties&quot;</span>:
+          { <span class="hljs-string">&quot;type&quot;</span>: { <span class="hljs-string">&quot;enum&quot;</span>: [ <span class="hljs-string">&quot;residential&quot;</span>, <span class="hljs-string">&quot;business&quot;</span> ] } },
+          <span class="hljs-string">&quot;required&quot;</span>: [<span class="hljs-string">&quot;type&quot;</span>]
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>&#x5982;&#x4E0B;&#x7684;json&#x503C;&#x4E0D;&#x5408;&#x89C4;&#xFF0C;&#x56E0;&#x4E3A;&#x7F3A;&#x5C11;&#x4E86;&#x5730;&#x5740;&#x7C7B;&#x578B;&#x7684;&#x63CF;&#x8FF0;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;shipping_address&quot;</span>: {
+    <span class="hljs-string">&quot;street_address&quot;</span>: <span class="hljs-string">&quot;1600 Pennsylvania Avenue NW&quot;</span>,
+    <span class="hljs-string">&quot;city&quot;</span>: <span class="hljs-string">&quot;Washington&quot;</span>,
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;DC&quot;</span>
+  }
+}
+</code></pre>
+<p>&#x5408;&#x89C4;&#x7684;json&#x503C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;shipping_address&quot;</span>: {
+    <span class="hljs-string">&quot;street_address&quot;</span>: <span class="hljs-string">&quot;1600 Pennsylvania Avenue NW&quot;</span>,
+    <span class="hljs-string">&quot;city&quot;</span>: <span class="hljs-string">&quot;Washington&quot;</span>,
+    <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;DC&quot;</span>,
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;business&quot;</span>
+  }
+}
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x57FA;&#x7840;&#x7ED3;&#x6784;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x6784;&#x5EFA;&#x51FA;&#x590D;&#x6742;&#x6709;&#x6548;&#x7684;&#x7ED3;&#x6784;&#x6765;&#xFF0C;&#x540C;&#x65F6;&#x53C8;&#x907F;&#x514D;&#x4E86;&#x91CD;&#x590D;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../json-schema/basics/regular_expressions.html" class="navigation navigation-prev " aria-label="Previous page: 正则匹配"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../json-schema/tv4_validator.html" class="navigation navigation-next " aria-label="Next page: 使用tv4进行数据验证"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
